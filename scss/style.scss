@@ -1,0 +1,14 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+body {
+    padding: 0px;
+    overflow-x: hidden;
+}
+
+@import "blocks/map";
+
+@import "blocks/media";
