@@ -1,5 +1,6 @@
 const geo1 = document.querySelector('.geo1'),
       geo2 = document.querySelector('.geo2'),
+      geoStop2 = document.getElementById('geo2'),
       geo3 = document.querySelector('.geo3'),
       geo4 = document.querySelector('.geo4'),
       geo5 = document.querySelector('.geo5'),
@@ -40,10 +41,13 @@ const geo1 = document.querySelector('.geo1'),
       video8 = document.querySelector('.video8'),
       video9 = document.querySelector('.video9'),
       video10 = document.querySelector('.video10'),
-      question = document.querySelector('.question');
+      question = document.querySelector('.question'),
+      preloader = document.querySelector('.preloader');
 
-videoBg.playbackRate = 0.9;
 
+window.onload = function () {
+    preloader.classList.add('preloader_hiding');
+};
 
 window.addEventListener('load', function() {
     geo1.classList.add('geo1_active'),
@@ -96,6 +100,7 @@ btn10.addEventListener('click', function() {
 close.addEventListener('click', function() {
     video.classList.remove('video_active'),
     videoBg.play();
+    videoBg.playbackRate = 0.7;
     video1.pause();
     window.scroll(0, 1000);
     geo2.classList.add('geo2_active'),
@@ -103,6 +108,7 @@ close.addEventListener('click', function() {
 })
 close2.addEventListener('click', function() {
     videoBg.play();
+    videoBg.playbackRate = 1.3;
     video2.classList.remove('video2_active');
     geo3.classList.add('geo3_active'),
     btn3.classList.add('btn3_active');
@@ -112,12 +118,14 @@ close3.addEventListener('click', function() {
     video3.classList.remove('video3_active');
     geo4.classList.add('geo4_active'),
     btn4.classList.add('btn4_active');
+    videoBg.playbackRate = 0.5;
 })
 close4.addEventListener('click', function() {
     videoBg.play();
     video4.classList.remove('video4_active');
     geo5.classList.add('geo5_active'),
     btn5.classList.add('btn5_active');
+    videoBg.playbackRate = 0.4;
 })
 close5.addEventListener('click', function() {
     videoBg.play();
@@ -126,12 +134,14 @@ close5.addEventListener('click', function() {
     question.classList.add('question_active')
     geo6.classList.add('geo6_active'),
     btn6.classList.add('btn6_active');
+    videoBg.playbackRate = 0.6;
 })
 close6.addEventListener('click', function() {
     videoBg.play();
     video6.classList.remove('video6_active');
     geo7.classList.add('geo7_active'),
     btn7.classList.add('btn7_active');
+    videoBg.playbackRate = 0.4;
 })
 close7.addEventListener('click', function() {
     videoBg.play();

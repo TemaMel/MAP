@@ -1,5 +1,26 @@
+.loaded {
+    display: none;
+}
 .preloader {
-    
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    background: linear-gradient(#4FB3BA, #2BB3C5, #5C28BD);
+    &__img {
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+    }
+    &_hiding {
+        transition: 0.3s opacity;
+        opacity: 0;
+        z-index: -1;
+    }
 }
 .map {
     display: flex;
