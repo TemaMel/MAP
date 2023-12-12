@@ -84,15 +84,12 @@ btn7.addEventListener('click', function() {
     video7.classList.add('video7_active');
 })
 btn8.addEventListener('click', function() {
-    videoBg.pause();
     video8.classList.add('video8_active');
 })
 btn9.addEventListener('click', function() {
-    videoBg.pause();
     video9.classList.add('video9_active');
 })
 btn10.addEventListener('click', function() {
-    videoBg.pause();
     video10.classList.add('video10_active');
 })
 
@@ -118,14 +115,14 @@ close3.addEventListener('click', function() {
     video3.classList.remove('video3_active');
     geo4.classList.add('geo4_active'),
     btn4.classList.add('btn4_active');
-    videoBg.playbackRate = 0.5;
+    videoBg.playbackRate = 0.35;
 })
 close4.addEventListener('click', function() {
     videoBg.play();
     video4.classList.remove('video4_active');
     geo5.classList.add('geo5_active'),
     btn5.classList.add('btn5_active');
-    videoBg.playbackRate = 0.4;
+    videoBg.playbackRate = 0.2;
 })
 close5.addEventListener('click', function() {
     videoBg.play();
@@ -141,7 +138,7 @@ close6.addEventListener('click', function() {
     video6.classList.remove('video6_active');
     geo7.classList.add('geo7_active'),
     btn7.classList.add('btn7_active');
-    videoBg.playbackRate = 0.4;
+    videoBg.playbackRate = 0.5;
 })
 close7.addEventListener('click', function() {
     videoBg.play();

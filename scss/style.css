@@ -23,13 +23,17 @@ body {
   justify-content: center;
   align-items: center;
   z-index: 100;
-  background: linear-gradient(#4FB3BA, #2BB3C5, #5C28BD);
+  background: linear-gradient(#E3AD4A, #E3AD4A, #E3AD4A);
 }
 .preloader__img {
   width: 150px;
   height: 150px;
   -o-object-fit: cover;
      object-fit: cover;
+  animation-name: rotation;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
 }
 .preloader_hiding {
   transition: 0.3s opacity;
@@ -37,6 +41,14 @@ body {
   z-index: -1;
 }
 
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 .map {
   display: flex;
   justify-content: center;
